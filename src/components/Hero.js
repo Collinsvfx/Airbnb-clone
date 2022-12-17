@@ -3,7 +3,7 @@ import HeroImg from "../images/Group 77.png";
 
 export default function Hero() {
   return (
-    <div>
+    <section>
       <div className="hero-img-container">
         <img alt="" src={HeroImg} className="hero-img" />
       </div>
@@ -14,6 +14,6 @@ export default function Hero() {
           without leaving home.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
