@@ -1,14 +1,15 @@
 import React from "react";
-import StarImg from "../images/Star 1.png";
+import starImg from "../images/Star 1.png";
 
 export default function Card(props) {
+  console.log(props);
   return (
     <div className="card-holder">
       <div className="card-img">
         <img alt="" src={props.img} />
       </div>
       <div className="the-ratings">
-        <img alt="" src={StarImg} />
+        <img alt="" src={starImg} />
         <div className="rating-text">
           <p className="fivepz">
             {props.rating}
