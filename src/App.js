@@ -16,6 +16,7 @@ export default function App() {
         title={data.title}
         price={data.price}
         key={data.id}
+        openSpots={data.openSpots}
       />
     );
   });
