@@ -7,18 +7,7 @@ import Data from "./components/data";
 export default function App() {
   const mappedData = Data.map((data) => {
     // console.log(data);
-    return (
-      <Card
-        img={data.coverImg}
-        rating={data.stats.rating}
-        reviewCount={data.stats.reviewCount}
-        location={data.location}
-        title={data.title}
-        price={data.price}
-        key={data.id}
-        openSpots={data.openSpots}
-      />
-    );
+    return <Card key={data.id} {...data} />;
   });
   // console.log(mappedData);
   return (
